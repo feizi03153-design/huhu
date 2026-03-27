@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费品牌口号生成器 - 在线生成 | 无需注册</title>
+    <meta name="description" content="免费的品牌口号生成器，帮助您生成简洁、有力的品牌口号，提升品牌知名度。无需注册，立即使用。">
+    <meta name="keywords" content="品牌口号生成器,品牌口号,品牌标语,品牌营销,营销工具">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">跨境文案生成器</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="amazon-title.html">亚马逊标题</a></li>
+                    <li><a href="facebook-ad.html">Facebook广告</a></li>
+                    <li><a href="instagram.html">Instagram文案</a></li>
+                    <li><a href="youtube-title.html">YouTube标题</a></li>
+                    <li><a href="tiktok.html">TikTok文案</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tool-page">
+                <h1>品牌口号生成器</h1>
+                <p>生成简洁、有力的品牌口号，提升品牌知名度。</p>
+                
+                <form id="brand-form">
+                    <div class="form-group">
+                        <label for="brandName">品牌名称</label>
+                        <input type="text" id="brandName" name="brandName" placeholder="例如：SmartTech" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="value">品牌价值</label>
+                        <input type="text" id="value" name="value" placeholder="例如：创新、品质、便捷" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="audience">目标受众</label>
+                        <input type="text" id="audience" name="audience" placeholder="例如：年轻人、专业人士、家庭用户" required>
+                    </div>
+                    <button type="submit" class="btn">生成口号</button>
+                </form>
+                
+                <div class="result" style="display: none;">
+                    <h3>生成结果</h3>
+                    <div class="result-content" id="brand-result"></div>
+                    <button class="copy-btn" onclick="copyToClipboard('brand-result')">复制到剪贴板</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>跨境文案生成器是一个免费的在线工具，帮助跨境电商卖家和营销人员快速创建高质量的文案内容，提升销售转化。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="amazon-title.html">亚马逊标题</a></li>
+                        <li><a href="facebook-ad.html">Facebook广告</a></li>
+                        <li><a href="instagram.html">Instagram文案</a></li>
+                        <li><a href="youtube-title.html">YouTube标题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>更多工具</h3>
+                    <ul>
+                        <li><a href="tiktok.html">TikTok文案</a></li>
+                        <li><a href="google-ad.html">Google广告</a></li>
+                        <li><a href="product-description.html">产品描述</a></li>
+                        <li><a href="email-title.html">邮件标题</a></li>
+                        <li><a href="promotion.html">促销文案</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>如有任何问题或建议，请联系我们。</p>
+                    <p>邮箱：contact@luxflix.eu.cc</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 跨境文案生成器. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('brand-form').addEventListener('submit', function() {
+            document.querySelector('.result').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

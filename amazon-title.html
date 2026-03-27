@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费亚马逊产品标题生成器 - 在线生成 | 无需注册</title>
+    <meta name="description" content="免费的亚马逊产品标题生成器，帮助您创建符合亚马逊算法的优化标题，提高产品曝光率和搜索排名。无需注册，立即使用。">
+    <meta name="keywords" content="亚马逊产品标题生成器,亚马逊标题优化,跨境电商,产品标题,SEO优化">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">跨境文案生成器</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="amazon-title.html">亚马逊标题</a></li>
+                    <li><a href="facebook-ad.html">Facebook广告</a></li>
+                    <li><a href="instagram.html">Instagram文案</a></li>
+                    <li><a href="youtube-title.html">YouTube标题</a></li>
+                    <li><a href="tiktok.html">TikTok文案</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tool-page">
+                <h1>亚马逊产品标题生成器</h1>
+                <p>创建符合亚马逊算法的优化标题，提高产品曝光率和搜索排名。</p>
+                
+                <form id="amazon-form">
+                    <div class="form-group">
+                        <label for="productName">产品名称</label>
+                        <input type="text" id="productName" name="productName" placeholder="例如：无线蓝牙耳机" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="features">产品特点</label>
+                        <input type="text" id="features" name="features" placeholder="例如：降噪、无线充电、防水" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="targetAudience">目标受众</label>
+                        <input type="text" id="targetAudience" name="targetAudience" placeholder="例如：运动爱好者、商务人士" required>
+                    </div>
+                    <button type="submit" class="btn">生成标题</button>
+                </form>
+                
+                <div class="result" style="display: none;">
+                    <h3>生成结果</h3>
+                    <div class="result-content" id="amazon-result"></div>
+                    <button class="copy-btn" onclick="copyToClipboard('amazon-result')">复制到剪贴板</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>跨境文案生成器是一个免费的在线工具，帮助跨境电商卖家和营销人员快速创建高质量的文案内容，提升销售转化。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="amazon-title.html">亚马逊标题</a></li>
+                        <li><a href="facebook-ad.html">Facebook广告</a></li>
+                        <li><a href="instagram.html">Instagram文案</a></li>
+                        <li><a href="youtube-title.html">YouTube标题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>更多工具</h3>
+                    <ul>
+                        <li><a href="tiktok.html">TikTok文案</a></li>
+                        <li><a href="google-ad.html">Google广告</a></li>
+                        <li><a href="product-description.html">产品描述</a></li>
+                        <li><a href="email-title.html">邮件标题</a></li>
+                        <li><a href="promotion.html">促销文案</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <p>如有任何问题或建议，请联系我们。</p>
+                    <p>邮箱：contact@luxflix.eu.cc</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 跨境文案生成器. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 显示结果区域
+        document.getElementById('amazon-form').addEventListener('submit', function() {
+            document.querySelector('.result').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

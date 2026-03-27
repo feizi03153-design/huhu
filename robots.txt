@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /txt/
+
+Sitemap: https://luxflix.eu.cc/sitemap.xml
